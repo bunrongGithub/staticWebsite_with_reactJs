@@ -1,0 +1,122 @@
+.contact{
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   text-align: center;
+   gap: 10px;
+   padding: 15px;
+}
+.form-contact{
+   margin: auto;
+   max-width: 60%;
+   display: flex;
+   flex-direction: column;
+   background-color: #ffffff16;
+   padding: 1rem;
+   border-radius: 0.3rem;
+   box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.336);
+}
+.form-contact .input{
+   margin: 0.5rem 0;
+   padding: 0.3rem 0.5rem;
+   border:none;
+   outline: none;
+   border-radius: 1px;
+   background: transparent;
+   border-bottom: 1.5px solid gray;
+   cursor: pointer;
+   font-size: 20px ;
+   color: #FFF;
+   letter-spacing: 2px;
+
+}
+.contact-title{
+   display: flex;
+   text-align: left;
+   align-items: center;
+   justify-content: center;
+}
+.contact-title p{
+   letter-spacing: 2px;
+   line-height:2;
+   font-size: 25px;
+   line-height: 2;
+}
+.btnShowText{
+   background: transparent;
+   color: rgba(0, 0, 255, 0.511);
+   border: none;
+   outline: none;
+   font-size: 18px;
+   letter-spacing: 1px;
+
+}
+.head-title{
+   max-width: 50%;
+   text-align:  center;
+   color: #fff;
+   font-style: italic;
+   border-bottom: 1px solid gray;
+}
+.btnShowText:hover{
+   border-bottom: 1px solid rgba(0,0,255,0.511);
+   transition: all 0.3;
+}
+.submit{
+   width: 100%;
+   padding: 5px 0;
+   background: rgba(255, 217, 0, 0.484);
+   border-radius: 2px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+}
+.submit:hover{
+   background: rgba(255, 217, 0, 0.593);
+   transition: all .4s;
+}
+@media  screen and (max-width:1040px) {
+   .contact{
+      grid-template-columns: repeat(2,1fr);
+   }
+   .contact-title p{
+      font-size: 17px;
+   }
+}
+@media screen and (max-width:940px){
+   .contact{
+      grid-template-columns: repeat(1,1fr);
+   }
+}
+@media screen and (max-width:740px){
+   .contact{
+      width: 100%;
+   }
+   .contact-title p{
+      font-size: 15px;
+      padding: 30px;
+   }
+}
+@media screen and (max-width:680px){
+   .contact{
+      max-width: 100%;
+      grid-template-columns: 100%;
+      justify-content: center;
+      align-items: center;
+   }
+   .contact-title p{
+      font-size: 15px;
+      padding: 30px;
+   }
+@media  screen and (max-width:475px) {
+   .contact{
+      max-width:100%;
+      grid-template-columns:100%;
+   }
+   .form-contact h2{
+      font-size: 15px;
+      font-weight: 300;
+   }
+}
+}
